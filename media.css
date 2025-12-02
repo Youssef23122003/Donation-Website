@@ -1,0 +1,87 @@
+@media screen and (max-width:768px){
+
+nav .nav-item .nav-link.active::after{
+width: 10%;
+left: 2px;
+bottom: -5px;
+}
+
+nav .nav-item .nav-link:hover::after {
+  
+    width: 15%;
+   
+    left: 2px;
+    bottom: -5px;
+}
+
+.my-container,nav .container{
+    width: 90%;
+}
+
+.header-slider{
+    height: 40vh;
+     background-position: center center;
+    background-size: cover;
+}
+.header-slider p {
+    display: none;
+}
+
+.donate-header h1{
+    font-size: 30px;
+}
+
+.donate-header h4{
+font-size: 24px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px){
+.my-container,nav .container{
+    width: 90%;
+}
+
+nav .nav-item .nav-link.active::after{
+width: 10%;
+left: 2px;
+bottom: -5px;
+}
+
+nav .nav-item .nav-link:hover::after {
+  
+    width: 15%;
+   
+   
+    left: 2px;
+    bottom: -5px;
+}
+
+.header-slider{
+    height: 70vh;
+     background-position: center center;
+    background-size: cover;
+}
+.header-slider p {
+    display: none;
+}
+
+.donate-header h1{
+    font-size: 30px;
+}
+
+.donate-header h4{
+font-size: 24px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+}
+
+@media only screen and (max-width: 1224px) and (min-width: 1025px){
+    .my-container,nav .container{
+    width: 90%;
+}
+}
