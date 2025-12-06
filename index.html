@@ -45,10 +45,14 @@
                 <img src="images/logo.png.webp" alt="navbar-logo">
             </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler border-0" type="button" 
+                    id="openSidebar">
                 <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <button class="navbar-toggler border-0 d-none" type="button" 
+                    id="closeSidebar">
+                <i class="fa fa-close" aria-hidden="true"></i>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -556,7 +560,20 @@
     </div>
     
 </footer>
-<button id="scrollTopBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+<button id="scrollTopBtn" id="closeSidebar" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+
+<div class="sidebar" id="sidebar">
+    <ul class="list-unstyled px-3 mt-4">
+        <li class="py-2 nav-item"><a href="#" class="nav-link active">Home</a></li>
+        <li class="py-2 nav-item"><a href="#" class="nav-link">About us</a></li>
+        <li class="py-2 nav-item"><a href="#" class="nav-link">Causes</a></li>
+        <li class="py-2 nav-item"><a href="#" class="nav-link">Gallery</a></li>
+        <li class="py-2 nav-item"><a href="#" class="nav-link">News</a></li>
+        <li class="py-2 nav-item"><a href="#" class="nav-link">Contact</a></li>
+    </ul>
+</div>
+
 
 
 <script src="bootstrap.bundle.min.js"></script>

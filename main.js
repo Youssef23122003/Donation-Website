@@ -40,3 +40,19 @@ scrollTopBtn.addEventListener('click', () => {
     });
 });
 
+
+const sidebar = document.getElementById("sidebar");
+const openBtn = document.getElementById("openSidebar");
+const closeBtn = document.getElementById("closeSidebar");
+
+function toggleSidebar() {
+    sidebar.classList.toggle("show");
+    openBtn.classList.toggle("d-none");
+    closeBtn.classList.toggle("d-none");
+}
+
+openBtn.addEventListener("click", toggleSidebar);
+closeBtn.addEventListener("click", toggleSidebar);
+
+
+

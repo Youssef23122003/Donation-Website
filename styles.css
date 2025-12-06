@@ -42,11 +42,11 @@ nav .container {
     position: relative;
 }
 
-nav .nav-item .active {
+.nav-item .active {
     color: #ff4500 !important;
 }
 
-nav .nav-item .nav-link.active::after {
+.nav-item .nav-link.active::after {
     content: '';
     position: absolute;
     width: 70%;
@@ -56,7 +56,7 @@ nav .nav-item .nav-link.active::after {
     bottom: -26px;
 }
 
-nav .nav-item .nav-link:hover::after {
+.nav-item .nav-link:hover::after {
     content: '';
     position: absolute;
     width: 50%;
@@ -66,7 +66,7 @@ nav .nav-item .nav-link:hover::after {
     bottom: -26px;
 }
 
-nav .nav-item .nav-link:hover {
+.nav-item .nav-link:hover {
     color: #ff4500 !important;
 }
 
@@ -325,3 +325,26 @@ li i {
 #scrollTopBtn:hover {
     background-color: #ff6600;
 }
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100vh;
+    background: #fff;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    transition: 0.5s;
+    z-index: 2000;
+}
+
+.sidebar.show {
+    left: 0;
+}
+
+.close-sidebar {
+    font-size: 30px;
+    cursor: pointer;
+}
+

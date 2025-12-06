@@ -1,14 +1,14 @@
 @media screen and (max-width:768px){
 
-nav .nav-item .nav-link.active::after{
-width: 10%;
+.nav-item .nav-link.active::after{
+width: 100%;
 left: 2px;
 bottom: -5px;
 }
 
-nav .nav-item .nav-link:hover::after {
+.nav-item .nav-link:hover::after {
   
-    width: 15%;
+    width: 100%;
    
     left: 2px;
     bottom: -5px;
@@ -55,15 +55,15 @@ font-size: 24px;
     width: 90%;
 }
 
-nav .nav-item .nav-link.active::after{
-width: 10%;
+.nav-item .nav-link.active::after{
+width: 100%;
 left: 2px;
 bottom: -5px;
 }
 
-nav .nav-item .nav-link:hover::after {
+.nav-item .nav-link:hover::after {
   
-    width: 15%;
+    width: 100%;
    
    
     left: 2px;
@@ -97,4 +97,9 @@ font-size: 24px;
     .my-container,nav .container{
     width: 90%;
 }
+
+    .sidebar.show {
+    left: 0px !important;
+}
+
 }
